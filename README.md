@@ -50,4 +50,6 @@ For this reason we should also take into consideration the Adjusted R<sup>2</sup
 
 We could also remove the above listed three variables in order to see that the R<sup>2</sup> value withot taking them into consideration at all. When this is done, the Multiple R<sup>2</sup> value drops to 67.4%. This is only a 5% change ((.674-.7149)/.7149) in the R<sup>2</sup> value.
 
-Based on the above, the the linear model predicts. mpg of MechaCar prototypes effectively
+![MechaCar_lm_summary_mod](https://user-images.githubusercontent.com/93630042/156928636-3c0baab3-52f9-4f3a-9665-b158e5a68676.png)
+
+Based on the above, the the linear model predicts. mpg of MechaCar prototypes effectively.
