@@ -80,11 +80,15 @@ lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mea
 ### Summary of Findings
 The total variance for all lots was 62.9356 which is under the requirement of 100. 
 
+![total_summary](https://user-images.githubusercontent.com/93630042/156929991-200be9ec-0db4-4653-8dfb-e5fb82c12b75.png)
+
 However, when looking at the individual lots we can see that Lot3 is significantly different than Lot1 and Lot2, causing a skewed overall variance. 
 
 - Lot1 variance:  0.9795918
 - Lot2 variance:  7.4693878
 - Lot3 variance:  170.2861224
+
+![lot_summary](https://user-images.githubusercontent.com/93630042/156929999-ac1edda5-0654-4768-a8f5-18b9b80d8b27.png)
 
 The Lot3 variance is much higher than the requirement of 100 and does not meet the specifications.
 The Lot1 and Lot2 variances are below 100 and therefor meet the specifications. 
