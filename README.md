@@ -28,14 +28,17 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 ![MechaCar_lm_summary](https://user-images.githubusercontent.com/93630042/156927422-975ecd9e-1db5-4003-9ebd-e2e754157eac.png)
 
 Based on the summary statistics we can determine which variables have a random amount of variance, and which do not. Determining this is based on each variables p-value when compared against the standard p-value of 0.05. 
-- Variables with a non-random amont of variance:
-  - vehicle_length
-  - vehicle_weight
-  - spoiler_angle
-  - ground_clearance
-  - AWD
-<br>
-- Variables with a random amount of variance:
-Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-Is the slope of the linear model considered to be zero? Why or why not?
+
+- Variables statistically likely to have a non-random amont of variance:
+  - vehicle_length (p-value = 2.60e-12)
+  - ground_clearance (p-value = 5.21e-08)
+
+- Variables statistically likely to have a random amount of variance:
+  - vehicle_weight (p-value = 0.0776)
+  - spoiler_angle (p-value = 0.3069)
+  - AWD (p-value = 0.1852)
+
+The slope of the model is not considered to be zero. This is based on the very small model p-value of 5.35e-11, which is significantly less the the standard p-value set of 0.05. Since this is much smaller then 0.05, we should reject the null hypothesis. The null hypothesis is a slope of 0 so since we are rejecting it, we can determine the slope must not be zero (either greather or less than). 
+
+Based on the R^2
 Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
