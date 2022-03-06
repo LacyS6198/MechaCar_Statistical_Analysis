@@ -171,15 +171,13 @@ Fuel efficiency is measured by MPG. It may differ by city or highway. For purpos
 A lower MPG for MechaCar would indicate poorer fuel efficiency performance. A higher MPG for MechaCar would indicate a better fuel efficiency performance.
 The below hypotheses would be the same for each vehicle model type being evaluated.
 
-#### Hypothesis 1 - City MPG
+#### Hypothesis
  - Null Hypothesis: The city MPG performance for MechaCar is not significantly different than competitors.
  - Alternative Hypothesis: The city MPG performance for MechaCar is significantly different than competitors. 
-
-#### Hypothesis 2 - Highway MPG
+	
  - Null Hypothesis: The highway MPG performance for MechaCar is not significantly different than competitors.
  - Alternative Hypothesis: The highway MPG performance for MechaCar is significantly different than competitors. 
-
-#### Hypothesis 1 - Overall MPG
+	
  - Null Hypothesis: The overall (combined city and highway) MPG performance for MechaCar is not significantly different than competitors.
  - Alternative Hypothesis: The overall (combined city and highway) MPG performance for MechaCar is significantly different than competitors. 
 
