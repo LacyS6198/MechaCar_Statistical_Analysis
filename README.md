@@ -129,17 +129,25 @@ For all of the below analyses, the null hypothesis is that the mean of the lot(s
  - Mean of x:  1498.78 
  - Finding:  The p-value is greater than the significance level set; fail to reject the null hypothesis. Sample mean is not significantly different than poplation mean of 1500.
  
+ ![1t-test](https://user-images.githubusercontent.com/93630042/156931025-c4f88f1c-6229-45d8-939e-f1db7e89eccb.png)
+ 
  #### Lot1
  - P-value:  p-value = 1
  - Mean of x:  1500
  - Finding:  The p-value is greater than the significance level set; fail to reject the null hypothesis. Sample mean is not significantly different than poplation mean of 1500.
  
+ ![lot1](https://user-images.githubusercontent.com/93630042/156931041-99890e77-7ce7-4485-912b-2a5d8b2f72f1.png)
+ 
  #### Lot2
  - P-value:  0.6072
  - Mean of x:  1500.2 
  - Finding:  The p-value is greater than the significance level set; fail to reject the null hypothesis. Sample mean is not significantly different than poplation mean of 1500.
+
+  ![lot2](https://user-images.githubusercontent.com/93630042/156931044-b718de26-887f-4b54-a2b1-d9c57e04be9f.png)
  
  #### Lot3
  - P-value:  0.04168
  - Mean of x:  1496.14
  - Finding:  The p-value is less than the significance level set; reject the null hypothesis. Sample mean is significantly different than poplation mean of 1500.
+
+  ![lot3](https://user-images.githubusercontent.com/93630042/156931054-781c7cb1-91a6-49f4-b50f-5864243a4060.png)
