@@ -92,3 +92,54 @@ However, when looking at the individual lots we can see that Lot3 is significant
 
 The Lot3 variance is much higher than the requirement of 100 and does not meet the specifications.
 The Lot1 and Lot2 variances are below 100 and therefor meet the specifications. 
+
+## T-Tests on Suspension Coils
+T-Tests were used to determine if all and each individal lots were statistically different from the population mean of 1,500 pounds per square inch.
+
+### Data Set Used
+The "Suspension_Coil.csv" data set was used for the linear regression analysis.
+
+### Analysis Type
+T-tests were used for this analysis.
+
+### R Functions Used
+The t.test and subset functions were used for this analysis.
+
+```
+#One sample t-test
+t.test(Suspension_Coil$PSI,mu=1500)
+
+#T-test for Lot1
+t.test(subset(Suspension_Coil$PSI, Suspension_Coil$Manufacturing_Lot == "Lot1"),mu=1500)
+
+#T-test for Lot2
+t.test(subset(Suspension_Coil$PSI, Suspension_Coil$Manufacturing_Lot == "Lot2"),mu=1500)
+
+#T-test for Lot3
+t.test(subset(Suspension_Coil$PSI, Suspension_Coil$Manufacturing_Lot == "Lot3"),mu=1500)
+```
+
+### Summary of Findings
+For all of the below analyses, the null hypothesis is that the mean of the lot(s) being analyized are equal to 1500. The p-value for significance is set to 0.05. 
+ - Any values with a p-value above(greater than) 0.05 will fail to reject the null hypothesis and indicate that the given sample's mean is not significantly different than 1500.
+ - Any values with a p-value below (less than) 0.05 will reject the null hypothesis and indicate that the given sample's mean is significantly different than 1500.
+ 
+ #### All Lots
+ - P-value:  0.06028
+ - Mean of x:  1498.78 
+ - Finding:  The p-value is greater than the significance level set; fail to reject the null hypothesis. Sample mean is not significantly different than poplation mean of 1500.
+ 
+ #### Lot1
+ - P-value:  p-value = 1
+ - Mean of x:  1500
+ - Finding:  The p-value is greater than the significance level set; fail to reject the null hypothesis. Sample mean is not significantly different than poplation mean of 1500.
+ 
+ #### Lot2
+ - P-value:  0.6072
+ - Mean of x:  1500.2 
+ - Finding:  The p-value is greater than the significance level set; fail to reject the null hypothesis. Sample mean is not significantly different than poplation mean of 1500.
+ 
+ #### Lot3
+ - P-value:  0.04168
+ - Mean of x:  1496.14
+ - Finding:  The p-value is less than the significance level set; reject the null hypothesis. Sample mean is significantly different than poplation mean of 1500.
