@@ -40,5 +40,5 @@ Based on the summary statistics we can determine which variables have a random a
 
 The slope of the model is not considered to be zero. This is based on the very small model p-value of 5.35e-11, which is significantly less the the standard p-value set of 0.05. Since this is much smaller then 0.05, we should reject the null hypothesis. The null hypothesis is a slope of 0 so since we are rejecting it, we can determine the slope must not be zero (either greather or less than). 
 
-Based on the R^2
+Based on the R<sup>2</sup>
 Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
