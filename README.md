@@ -40,5 +40,14 @@ Based on the summary statistics we can determine which variables have a random a
 
 The slope of the model is not considered to be zero. This is based on the very small model p-value of 5.35e-11, which is significantly less the the standard p-value set of 0.05. Since this is much smaller then 0.05, we should reject the null hypothesis. The null hypothesis is a slope of 0 so since we are rejecting it, we can determine the slope must not be zero (either greather or less than). 
 
-Based on the R<sup>2</sup>
-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+Based on the Multiple R<sup>2</sup> value of 0.7149, we can expect this model predicts 71.5% of the variance and outcome of x. However, this may be overfitted since it was previoulsy determined that the below three variables do not significantly explain the outcome due to their high (greater than 0.05) p-values. 
+
+  - vehicle_weight (p-value = 0.0776)
+  - spoiler_angle (p-value = 0.3069)
+  - AWD (p-value = 0.1852)
+
+For this reason we should also take into consideration the Adjusted R<sup>2</sup> value of 0.6825 which adjusts for the number of variables. 
+
+We could also remove the above listed three variables in order to see that the R<sup>2</sup> value withot taking them into consideration at all. When this is done, the Multiple R<sup>2</sup> value drops to 67.4%. This is only a 5% change ((.674-.7149)/.7149) in the R<sup>2</sup> value.
+
+Based on the above, the the linear model predicts. mpg of MechaCar prototypes effectively
