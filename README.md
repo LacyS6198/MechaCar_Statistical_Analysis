@@ -151,3 +151,69 @@ For all of the below analyses, the null hypothesis is that the mean of the lot(s
  - Finding:  The p-value is less than the significance level set; reject the null hypothesis. Sample mean is significantly different than poplation mean of 1500.
 
   ![lot3](https://user-images.githubusercontent.com/93630042/156931054-781c7cb1-91a6-49f4-b50f-5864243a4060.png)
+
+## Study Design: MechaCar vs Competition
+In order to compare the MechaCar against competition, additional metrics would need to be taken into consideration. There are numerous metrics that could be used for comparison. 
+Some metrics may be dependent on consumer preference. For example, vehicle length and weight may be taken into consideration more by consumers living in cities than in rural areas where ability to maneuver smaller roads is important. Ground clearance may be taken into consideration more by consumers living in colder climates where vehicle ability to drive through depths of snow is important. For this study, consumer preferences will not be taken into consideration but should considered in future studies when comparing against the competition.
+
+This study will take into consideration the below metrics, most of which are not available in the current data set and would need to be gathered.
+- City MPG vs Highway MPG
+- Safety rating
+- Price
+
+In order to complete an adequate comparison, the data above would need to be collected for the MechaCar's core competitors' vehicles. The vehicle model types would need to be selected for each manufacture to ensure appropriate comparisons were being done. 
+Specifically, the vehicle categories would need to be taken into consideration. For example, a MechaCar crossover model may not be comparable against another manufacture's sedan or truck models. For purposes of this study, each type of model for MechaCar would be compared against the same model type for a different set of manufacturers.
+
+For purposes of this study, there will be multiple hypotheses tested to determine performance in several key areas.
+
+### Fuel Efficiency
+Fuel efficiency is measured by MPG. It may differ by city or highway. For purposes of this study, both types will be taken into consideration. 
+A lower MPG for MechaCar would indicate poorer fuel efficiency performance. A higher MPG for MechaCar would indicate a better fuel efficiency performance.
+The below hypotheses would be the same for each vehicle model type being evaluated.
+
+#### Hypothesis
+ - Null Hypothesis: The city MPG performance for MechaCar is not significantly different than competitors.
+ - Alternative Hypothesis: The city MPG performance for MechaCar is significantly different than competitors. 
+	
+ - Null Hypothesis: The highway MPG performance for MechaCar is not significantly different than competitors.
+ - Alternative Hypothesis: The highway MPG performance for MechaCar is significantly different than competitors. 
+	
+ - Null Hypothesis: The overall (combined city and highway) MPG performance for MechaCar is not significantly different than competitors.
+ - Alternative Hypothesis: The overall (combined city and highway) MPG performance for MechaCar is significantly different than competitors. 
+
+#### Statistical Tests
+ - Summary statistics for each MPG type (overall, city, highway) would be determined within a matrix and compared against each manufacture.
+ - An ANOVA test would be done for each MPG type (overall, city, highway) would be done to determine if there is a signficant difference in the mean MechaCar MPG by Type vs the mean MPG by Type of competitors. 
+ - A box plot would be created to better visualize the differences among manufactures.
+ 
+### Safety Rating
+Safety is a common measure of vehicle performance. For purposes of this study, the overall safety rating will be used. 
+A lower safety rating would indicate poorer performance. A higher safety rating would indicate a better performance.
+The below hypotheses would be the same for each vehicle model type being evaluated.
+
+#### Hypothesis
+ - Null Hypothesis:  The overall safety of MechaCar is not significantly different than competitors.
+ - Alternative Hypothesis: The overall safety of MechaCar is significantly different than competitors.
+
+#### Statistical Tests
+ - The average safety by model type would be determined for MechaCar and competitors. 
+ - An ANOVA test would be used to determine whether the means among manufacturers are significantly different. 
+ - Two-Sample t-tests could also be performed to better compare against certain manufacturers. 
+
+### Price
+Price is a common measure to determine how expensive the vehicle is for consumers to purchase.
+In this comparison, a higher price often indicates less competitive vehicle in the marketplace. 
+The below hypotheses would be the same for each vehicle model type being evaluated.
+
+#### Hypothesis
+ - Null Hypothesis:  The overall vehicle price of MechaCar is not significantly different than competitors.
+ - Alternative Hypothesis: The overall vehicle price of MechaCar is significantly different than competitors.
+
+#### Statistical Tests
+ - An ANOVA test would be used to determine whether the means among manufacturers are significantly different. 
+ - Two-Sample t-tests could also be performed to better compare against certain manufacturers. 
+ 
+### All Factors Combined
+Each of the metrics being analyzed (Fuel Efficiency, Safety Rating, and Price) are key metrics that can be observed individally. However, they also should be taken into consideration as a whole. When all are taken into consideration, it can tell a different story about the competitiveness of MechaCar's vehicles over the competition.
+For example, if taking Price alone we may incorrectly assume a lower price always means better against competition. However, if a lower priced vehicle as much lower MPG and lower safety rating, then it may not be very competitive in the marketplace due to vehicle performance. 
+
